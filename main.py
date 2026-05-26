@@ -7,7 +7,7 @@ from langgraph_sdk import get_client
 load_dotenv()
 
 client = get_client(
-    url="https://langsmith.randyjohnston.info/lgp/deepagents-retest-20260520-22a65f4e761e51a584209604d3c69f85",
+    url=os.environ["LANGSMITH_URL"],
     api_key=os.environ["LANGSMITH_API_KEY"],
 )
 
